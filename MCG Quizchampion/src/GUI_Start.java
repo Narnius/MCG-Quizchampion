@@ -65,7 +65,7 @@ public class GUI_Start extends JFrame {
 		contentPane.add(lblRegeln);
 		
 		lblSpieleranzahl = new JLabel("Spieler-Anzahl");
-		lblSpieleranzahl.setBounds(54, 141, 96, 14);
+		lblSpieleranzahl.setBounds(54, 150, 96, 14);
 		contentPane.add(lblSpieleranzahl);
 		
 		btnLaden = new JButton("Laden");
@@ -78,17 +78,23 @@ public class GUI_Start extends JFrame {
 		
 		txtSpielername1 = new JTextField();
 		txtSpielername1.setText("Spielername 1");
-		txtSpielername1.setBounds(54, 218, 96, 20);
+		txtSpielername1.setBounds(54, 218, 100, 20);
 		contentPane.add(txtSpielername1);
 		txtSpielername1.setColumns(10);
 		
 		txtSpielername2 = new JTextField();
 		txtSpielername2.setText("Spielername 2");
-		txtSpielername2.setBounds(54, 307, 96, 20);
+		txtSpielername2.setBounds(54, 307, 100, 20);
 		contentPane.add(txtSpielername2);
 		txtSpielername2.setColumns(10);
 		
 		btnEinSpieler = new JButton("1 Spieler");
+		btnEinSpieler.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				HauptKlasse.setSpielerZahl(1);
+				System.out.println("Ein Spieler gewaehlt!");
+			}
+		});
 		btnEinSpieler.setBounds(54, 188, 89, 23);
 		contentPane.add(btnEinSpieler);
 		
@@ -106,7 +112,7 @@ public class GUI_Start extends JFrame {
 		
 		txtSpielername3 = new JTextField();
 		txtSpielername3.setText("Spielername 3");
-		txtSpielername3.setBounds(54, 430, 150, 100);
+		txtSpielername3.setBounds(54, 390, 100, 20);
 		contentPane.add(txtSpielername3);
 		txtSpielername3.setColumns(10);
 	}
