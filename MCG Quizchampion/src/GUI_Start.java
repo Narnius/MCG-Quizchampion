@@ -28,6 +28,7 @@ public class GUI_Start extends JFrame {
 	private JButton btnDreiSpieler;
 	private JTextField txtSpielername3;
 	private final ButtonGroup btnGroupSpielerZahl = new ButtonGroup();
+	private JButton btnTest;
 
 
 	/**
@@ -145,5 +146,16 @@ public class GUI_Start extends JFrame {
 		txtSpielername3.setBounds(54, 390, 100, 20);
 		contentPane.add(txtSpielername3);
 		txtSpielername3.setColumns(10);
+		
+		btnTest = new JButton("test");
+		btnTest.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.out.println(HauptKlasse.getSpielername1());
+				System.out.println(HauptKlasse.getSpielername2());
+				System.out.println(HauptKlasse.getSpielername3());
+			}
+		});
+		btnTest.setBounds(54, 68, 89, 23);
+		contentPane.add(btnTest);
 	}
 }
