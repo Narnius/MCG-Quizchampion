@@ -1,12 +1,12 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Fragenkatalog {
+public class FragenKatalog {
 
 	HashMap<String, HashMap<Integer, ArrayList<Frage>>> fragenliste = new HashMap<String, HashMap<Integer, ArrayList<Frage>>>();
 	ArrayList<String> kategorien = new ArrayList<String>();
 	
-	public Fragenkatalog()
+	public FragenKatalog()
 	{
 		kategorienFuellen();
 		for( int i = 0; i < kategorien.size(); i++ )
