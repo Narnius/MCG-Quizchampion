@@ -26,7 +26,7 @@ public class Frage {
 		setKorrekteAntwort(korrekteAntwort);
 	}
 	
-	  //Aufruf: new Frage(i, "", j, "", "", "", "", "", '')
+	  //Aufruf: fragenliste.add(new Frage(i, "", j, "", "", "", "", "", ''))
 	
 	// Getters & Setters
 
