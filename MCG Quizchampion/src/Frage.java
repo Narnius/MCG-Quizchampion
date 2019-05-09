@@ -2,8 +2,8 @@
 public class Frage {
 	
 	private int nummer;
-	private String Kategorie;
-	private int Schwierigkeitsgrad; //1 leicht, 2 mittel, 3 schwer
+	private String kategorie;
+	private int schwierigkeitsgrad; //1 leicht, 2 mittel, 3 schwer
 	private String frage;
 	
 	private String antwortA;
@@ -15,11 +15,18 @@ public class Frage {
 	
 	
 	//Konstruktor
-	public Frage(int nummer)
+	public Frage(int nummer, String kategorie, int schwierigkeitsgrad, String Frage, String antwortA, String antwortB, String antwortC, String antwortD, Character korrekteAntwort)
 	{
 		setNummer(nummer);
+		setKategorie(kategorie);
+		setSchwierigkeitsgrad(schwierigkeitsgrad);
+		setAntwortA(antwortA);
+		setAntwortB(antwortB);
+		setAntwortC(antwortC);
+		setKorrekteAntwort(korrekteAntwort);
 	}
 	
+	  //Aufruf: new Frage(i, "", j, "", "", "", "", "", '')
 	
 	// Getters & Setters
 
@@ -30,22 +37,26 @@ public class Frage {
 	public void setNummer(int nummer) {
 		this.nummer = nummer;
 	}
+	
 
 	public String getKategorie() {
-		return Kategorie;
+		return kategorie;
 	}
 
+
 	public void setKategorie(String kategorie) {
-		Kategorie = kategorie;
+		this.kategorie = kategorie;
 	}
 
 	public int getSchwierigkeitsgrad() {
-		return Schwierigkeitsgrad;
+		return schwierigkeitsgrad;
 	}
 
+
 	public void setSchwierigkeitsgrad(int schwierigkeitsgrad) {
-		Schwierigkeitsgrad = schwierigkeitsgrad;
+		this.schwierigkeitsgrad = schwierigkeitsgrad;
 	}
+
 
 	public String getFrage() {
 		return frage;
