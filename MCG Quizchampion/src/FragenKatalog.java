@@ -17,6 +17,14 @@ public class FragenKatalog {
 	
 	private void kategorienFuellen()
 	{
+		/*
+		int i = 1;
+		fragenliste.add(new Frage(i, "", j, "", "", "", "", "", ''))
+		i++
+		*/
+		
+		
+		
 		kategorien.add("Informatik");
 		kategorien.add("Sport");
 		kategorien.add("Games");
@@ -27,5 +35,6 @@ public class FragenKatalog {
 		kategorien.add("Religion");
 		kategorien.add("In der Natur");
 		kategorien.add("Chemie");
+		
 	}
 }
