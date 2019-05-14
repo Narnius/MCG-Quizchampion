@@ -2,7 +2,7 @@
 public class HauptKlasse {
 	
 	private static int spielerZahl = 0;
-	public static FragenKatalog fragenKatalog = new FragenKatalog();
+	public static FragenKatalog fragenkatalog = new FragenKatalog();
 	private static String spielername1, spielername2,spielername3;
 	private static int punkteS1 = 0;
 	private static int punkteS2 = 0;
@@ -23,11 +23,11 @@ public class HauptKlasse {
 	}
 
 	public static FragenKatalog getFragenkatalog() {
-		return fragenKatalog;
+		return fragenkatalog;
 	}
 
 	public static void setFragenkatalog(FragenKatalog fragenKatalog) {
-		HauptKlasse.fragenKatalog = fragenKatalog;
+		HauptKlasse.fragenkatalog = fragenKatalog;
 	}
 
 	public static String getSpielername1() {

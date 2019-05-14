@@ -32,6 +32,16 @@ public class GUI_Kategoriewahl extends JFrame {
 			}
 		});
 	}
+	
+	//Zufällige Kategorie
+	public void zufaelligeKategorienauswahl(int anzahlKategorien)
+	{
+		String ausgewaehlteKategorie;
+		
+		//Aufruf: zufaelligeKategorienauswahl(HauptKlasse.fragenkatalog.kategorien.size())
+		
+	}
+	
 
 	/**
 	 * Create the frame.
